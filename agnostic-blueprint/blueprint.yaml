@@ -8,7 +8,11 @@ resources:
       flavor: Small # you can set your own definition of flavor on the infrastructure tab, pay attention to this too
       networks:
         - name: '${resource.Cloud_Network_1.name}' 
-  Cloud_Network_1:
+      cloudConfig: |
+        #cloudconfig
+        packages:
+        - apache2
+Cloud_Network_1:
     type: Cloud.Network
     properties:
       name: public
