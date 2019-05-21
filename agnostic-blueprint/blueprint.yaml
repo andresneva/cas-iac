@@ -7,12 +7,12 @@ resources:
       image: Ubuntu # you can set your own Image type on the Infrastructure tab, pay attention to this
       flavor: Small # you can set your own definition of flavor on the infrastructure tab, pay attention to this too
       networks:
-        - name: '${resource.Cloud_Network_1.name}' 
+        - name: '${resource.Cloud_Network_2.name}' 
       cloudConfig: |
         #cloudconfig
         packages:
         - apache2
-Cloud_Network_1:
+Cloud_Network_2:
     type: Cloud.Network
     properties:
       name: public
