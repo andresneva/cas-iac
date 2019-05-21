@@ -11,5 +11,5 @@ resources:
 Cloud_Network_1:
     type: Cloud.Network
     properties:
-      name: public
+      name: Group-5-network-profile
       networkType: existing
